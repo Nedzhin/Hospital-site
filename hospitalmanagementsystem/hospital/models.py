@@ -1,5 +1,5 @@
 from django.db import models
-
+import datetime
 # Create your models here.
 class Patient(models.Model):
   name = models.CharField(max_length=50, null = True)
@@ -49,3 +49,11 @@ class Doctor(models.Model):
   def __str__(self):
     return self.name
 
+
+class Appointment(models.Model):
+    name = models.CharField(max_length=30)
+    surname = models.CharField(max_length=30)
+    date = models.DateField(default=datetime.date.today)
+    specialization = models.CharField(max_length=30)
+    doctor =models.ForeignKey(Doctor, on_delete=models.CASCADE)
+    contacts = models.CharField(max_length=100)
