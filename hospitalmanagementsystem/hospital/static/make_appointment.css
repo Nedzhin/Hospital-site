@@ -1,7 +1,21 @@
 body {
-    background-image: url('https://www.hospitalsafetygrade.org/media/image/leapfrog-anniversary-bg.jpg');
+    background-image: url('https://blog.amopportunities.org/wp-content/uploads/2022/02/iStock-664182480-scaled.jpg');
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position-x: right;
     height: 100%;   
 }
 
+#container {
+    background-color: rgb(145, 255, 255);
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    text-align: center;
+
+}
